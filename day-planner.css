@@ -1,0 +1,25 @@
+body {
+    background-color: antiquewhite;
+}
+
+
+
+#click {
+    float: right;
+}
+#time {
+    width: 44px;
+}
+
+#plan {
+    height: 100px;
+    margin-bottom: 5px;
+    
+}
+
+.footer {
+ border: double;
+ height: 5px;
+ padding: 20px;
+}
+

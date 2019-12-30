@@ -7,6 +7,8 @@
     <title>Day Planner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="day-planner.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
 </head>
 <body>
     <div class="card text-center">
@@ -21,17 +23,48 @@
       </div>
 <div class="box-container">
     <div class="row">
-        <div class="col-md-12">9am<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">10am<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">11am<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">12pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">1pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">2pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">3pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">4pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
-        <div class="col-md-12">5pm<input id="plan" type ="text"><button id="click" onclick="">Save</button> </div>
+        <div class="col-md-12">9am<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">10am<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">11am<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">12pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">1pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">2pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">3pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">4pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
+        <div class="col-md-12">5pm<input id="plan" type ="text"><button id="click" onclick="Save">Save</button> </div>
     </div>
 </div>
+
+<script>
+    //Javasript Function that wraps everyhting///
+    var plan = document.querySelector("#plan");
+    var click = document.querySelector("#click");
+
+    var m = moment();
+    console.log("Original Moment: ${m.toString()}");
+
+
+
+    console.log("After Manipulation: ${m.toString()}");
+
+$(document).ready(function() {
+    if(localStorage.plan) {
+        localStorage.plan = number(localStorage.plan) +1;
+    }else{ 
+        localStorage.plan=1;
+
+    }
+})
+
+
+
+
+
+
+
+
+
+    </script>
     
 </body>
 </html>

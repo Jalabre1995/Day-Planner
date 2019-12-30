@@ -14,8 +14,57 @@ body {
 #plan {
     height: 100px;
     margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    
     
 }
+
+button {
+    
+        font:15px Calibri, Arial, sans-serif;
+    
+        /* A semi-transparent text shadow */
+        text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+    
+        /* Overriding the default underline styling of the links */
+        text-decoration:none !important;
+        white-space:nowrap;
+    
+        display:inline-block;
+        vertical-align:baseline;
+        position:relative;
+        cursor:pointer;
+        padding:10px 20px;
+    
+        background-repeat:no-repeat;
+    
+        background-position:bottom left;
+        background-image:url('button_bg.png');
+    
+    
+        background-position:bottom left, top right, 0 0, 0 0;
+        background-clip:border-box;
+    
+    
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        border-radius:8px;
+    
+        -moz-box-shadow:0 0 1px #fff inset;
+        -webkit-box-shadow:0 0 1px #fff inset;
+        box-shadow:0 0 1px #fff inset;
+    
+        -webkit-transition:background-position 1s;
+        -moz-transition:background-position 1s;
+        -o-transition:background-position 1s;
+        transition:background-position 1s;
+        
+        background-color: lightseagreen;
+    }
+    
+
+
 
 .footer {
  border: double;

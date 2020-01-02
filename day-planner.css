@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgba(192, 144, 214, 0.602);
 }
 
 
@@ -16,7 +16,8 @@ body {
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
-    width: 95%
+    width: 90%;
+    margin-top: 11px;
     
     
 }
@@ -37,11 +38,11 @@ button {
         position:relative;
         cursor:pointer;
         padding:10px 20px;
+        height: 45px;
     
         background-repeat:no-repeat;
     
         background-position:bottom left;
-        background-image:url('button_bg.png');
     
     
         background-position:bottom left, top right, 0 0, 0 0;
@@ -50,7 +51,7 @@ button {
     
         -moz-border-radius:8px;
         -webkit-border-radius:8px;
-        border-radius:8px;
+        border-radius:32px;
     
         -moz-box-shadow:0 0 1px #fff inset;
         -webkit-box-shadow:0 0 1px #fff inset;
@@ -63,6 +64,8 @@ button {
         
         background-color: lightseagreen;
     }
+
+    
     
 
 
@@ -72,4 +75,5 @@ button {
  height: 5px;
  padding: 20px;
 }
+
 

@@ -1,50 +1,39 @@
-//Javasript Function that wraps everyhting///
-var plan = document.getElementById("plan");
-var save = document.getElementById("Save-btn");
+//Javasript Function that wraps everything///
+var textInput = document.getElementById("plan");
+var saveButton = document.getElementById("Save-btn");
+var msgDiv = document.getElementById("msg");
 
 $(document).ready(function() {
-    $("#click").click(function Save() {
-        var key = plan.value;
-        console.log(key);
-        if(key&&value) {
-            localStorage.setItem(key,value);
-            location.reload();
-        }
-    })
-    
-   
-})
 
+renderLastSave();
 
-$(document).ready(function() {
-    $("#Save-btn").click(function Save() {
-        var inputValue = document.getElementById("plan").value;
-        var t =document.createTextNode("plan");
-        appendChild(t);
-        document.getElementById("plan").value = "";
-    })
-})
+function displayMessage(type, message){
+    msgDiv.textContent = message;
+    msgDiv.setAttribute("class", type);
+}
 
-function checkTime(i) {
-    if (i<10) {
-        i="0" +i;
+function renderLastSave() {
+    var text = localStorage.getItem("plan");
+    if(text === null) {
+        return;
     }
-    return i;
+ textInput.textContent = textInput;
+
 }
 
-function startTime() {
-    var today = new Date()
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s =checkTime(s);
-    document.getElementsByClassName("box-container").innerHTML = h + ":"+ m + ":" + s;
-    t = setTimeout(function() {
-        startTime() 
-        
-    },500);
+    $("#Save-btn").click(function(event) {
+        event.preventDefault();
+        var text = document.getElementById("plan").value;
+        if (text === "") {
+            displayMessage("text blank");
+        } else {
+            displayMessage("text is saved!");
+            localStorage.setItem("plan", text);
+            renderLastSave();
+        }
+        }
     
-}
-startTime()
+    );
+});
+
 

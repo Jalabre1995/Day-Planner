@@ -11,15 +11,50 @@ body {
     width: 44px;
 }
 
-#plan {
+
+#plan1 {
     height: 100px;
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
     width: 90%;
     margin-top: 11px;
-    
-    
+}
+
+#plan2 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
+
+#plan3 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
+
+#plan4 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
+
+#plan5 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
 }
 
 button {

@@ -1,5 +1,13 @@
 body {
-    background-color: rgba(192, 144, 214, 0.602);
+    background-image: url("http://galleries.soft-graphix.com/storage/cache/images/000/054/purple-polka-dots-free,medium.2x.1472001813.jpg");
+}
+
+.card-body {
+    background-image: url("http://www.masterdiz.com/indx/backgrounds/moves/cld07.jpg");
+}
+
+.footer {
+    background-color: black;
 }
 
 
@@ -11,6 +19,14 @@ body {
     width: 44px;
 }
 
+#plan-text {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px
+}
 
 #plan1 {
     height: 100px;
@@ -26,7 +42,7 @@ body {
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
-    width: 90%;
+    width: 89%;
     margin-top: 11px;
 }
 
@@ -35,7 +51,7 @@ body {
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
-    width: 90%;
+    width: 89%;
     margin-top: 11px;
 }
 
@@ -44,7 +60,7 @@ body {
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
-    width: 90%;
+    width: 89%;
     margin-top: 11px;
 }
 
@@ -53,10 +69,45 @@ body {
     margin-bottom: 5px;
     border-width: 3px;
     border: dotted black;
+    width: 89%;
+    margin-top: 11px;
+}
+
+#plan6 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
     width: 90%;
     margin-top: 11px;
 }
 
+#plan7 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
+
+#plan8 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
+
+#plan9 {
+    height: 100px;
+    margin-bottom: 5px;
+    border-width: 3px;
+    border: dotted black;
+    width: 90%;
+    margin-top: 11px;
+}
 button {
     
         font:15px Calibri, Arial, sans-serif;

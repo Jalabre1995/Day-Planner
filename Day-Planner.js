@@ -1,7 +1,7 @@
 //Javasript Function that wraps everything///
-var textInput = document.getElementById("plan1");
-var saveButton = document.getElementById("Save-btn");
-var msgDiv = document.getElementById("msg");
+var textInput = $("#plan1");
+var saveButton = $("#Save-btn");
+var msgDiv = $("#msg");
 
 $(document).ready(function() {
     console.log(renderLastSave)
@@ -10,23 +10,23 @@ renderLastSave();
 
 
 function displayMessage(type, message){
-    msgDiv.innerHTML = message;
-    msgDiv.setAttribute("class", type);
-}
+    $("#msg").innerHTML = message;
+    $("#msg").attr("class", type);
+} 
 
-function renderLastSave() {
+function renderLastSave() { 
     var text = localStorage.getItem("plan");
     if(text === null) {
         return;
     }
     console.log(text)
- textInput.value = text;
+    textInput.value = text;
 
 }
 
     $("#Save-btn").click(function(event) {
         event.preventDefault();
-        var text = document.getElementById("plan1").value;
+        var text = $("#plan1").value;
         if (text === "") {
             displayMessage("text blank");
         } else {
@@ -39,3 +39,8 @@ function renderLastSave() {
     );
 });
 
+
+
+////////////////-Code for Implementing the time////////////
+
+var now = new Date(Date.now());
